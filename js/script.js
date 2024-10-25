@@ -1,8 +1,8 @@
  
 //  burger menu
  $(document).ready(function() {
-   $('.header__burger').click(function() {
-     $('.header__top-wrapper').toggleClass('active');
+   $('.header').click(function() {
+     $('.header__links').toggleClass('active');
      $('body').toggleClass('stop-skroll');
    });
  });
