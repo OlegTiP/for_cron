@@ -9,6 +9,7 @@
 
 body {
    max-width: 1920px;
+   margin: 0 auto;
    background: $black;
    color: $white;
    overflow-x: hidden;
@@ -213,6 +214,7 @@ body {
 }
 
 .elements {
+   max-width: 1920px;
    position: absolute;
    width: 100%;
    height: 100%;
@@ -325,7 +327,8 @@ body {
          bottom: 300px;
       }
       @media (max-width: $sm-tablet) {
-         bottom: 400px;
+         bottom: 300px;
+         right: 36px;
       }
 
 
