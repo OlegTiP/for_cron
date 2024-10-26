@@ -1,5 +1,7 @@
 @import "variables";
 
+// npm run sass:watch
+
 * {
    margin: 0;
    padding: 0;
@@ -13,6 +15,12 @@ body {
    background: $black;
    color: $white;
    overflow-x: hidden;
+   height: 100%;
+}
+
+.wrapper {
+   position: relative;
+   overflow: hidden;
 }
 
 .container {
@@ -103,12 +111,16 @@ body {
       animation: none;
       transition: transform 2s ease-in-out;
 
-      &:hover {
-         animation: rotate 2s ease-in-out forwards;
-      }
-
       &:hover  {
+         @media (max-width: $sm-tablet) {
+            transform: none;
+         }
          transform: rotate(360deg);
+      }
+      &:active {
+         @media (max-width: $sm-tablet) {
+            transform: rotate(360deg);
+         }
       }
    }
 
